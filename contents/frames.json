@@ -1,12 +1,11 @@
 {
-    "id": "Schwarzchild",
+    "id": "mf_schwarzchild",
     "license_level": 2,
-    "license_id": "Schwarzchild",
     "source": "DSD",
     "name": "Schwarzchild",
     "specialty": false,
     "mechtype": ["Striker","Defender"],
-    "description": "[TODO] Less a frame and more an <i>anomaly</i>, the Schwarzchild is the result of ancient Riftweaving techniques, theories about the precise nature of the Neurostream, and lost Oeldrie technology--all coming together in the form of a melding of pilot and frame that is unlike any other.",
+    "description": "TODO: Less a frame and more an anomaly, the Schwarzchild is the result of ancient Riftweaving techniques, theories about the precise nature of the Neurostream, and lost Oeldrie technology--all coming together in the form of a melding of pilot and frame that is unlike any other.",
     "mounts": ["Main","Heavy","Flex"],
     "stats": {
         "size": 2,
