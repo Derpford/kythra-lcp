@@ -1,0 +1,60 @@
+[
+    {
+        "id": "mw_accretion_glaive",
+        "name": "Accretion Glaive",
+        "license_id": "mf_schwarzchild",
+        "license_level": 1,
+        "mount": "Main",
+        "type": "Melee",
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "1d6"
+            },
+            {
+                "type": "Heat",
+                "val": 1
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_thrown",
+                "val": 5
+            }
+        ],
+        "effect": "The Accretion Glaive automatically returns at the end of any turn it is thrown. Any time the Accretion Glaive deals damage, the Heat it inflicts increases by 1 until the end of the scene, to a maximum of 6.",
+        "description": "Formed out of charged particles drawn in by a captured singularity, the Accretion Glaive is a remarkably efficient weapon, as it technically requires no external power source. <i>Containing</i> it is another matter entirely."
+    },
+    {
+        "id": "mw_penrose_cannon",
+        "name": "Penrose Accumulator",
+        "license_id": "mf_schwarzchild",
+        "license_level": 3,
+        "mount": "Heavy",
+        "type": "Cannon",
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            },
+            {
+                "type": "Blast",
+                "val": 3
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": "4d6"
+            }
+        ],
+        "effect": "Any target in the central hex of this weapon's AoE which has 1 Structure and 7 or less HP at the time of firing is instantly destroyed, leaving no wreck behind. Size 4 and lower cover inside the blast radius is instantly destroyed.",
+        "description": "<span class='horus--subtle'><b><i>\"This place is familiar. It is like a childhood memory, I think. I see this place, and...not this place.<br>I am...starting to lose track. Of which reality is true.<br>My own memory is left wanting. This place... I can tell. I can see all the space around this memory. I know something is missing only by the shape of my memories around it. It is lost... like a fog. I remember... everything. Ragnarok. The only way I would not know of this place... is if that part was taken. I intend to find it again.\"</i></b></span><br><i>-- Godsoldier Deus Rex, to Daemon 'Ragnarok'</i>"
+    }
+]
