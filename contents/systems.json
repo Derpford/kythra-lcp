@@ -1,0 +1,96 @@
+[
+    {
+        "id": "ms_chandra_limiter",
+        "name": "Chandrasekhar Limiter",
+        "source": "DSD",
+        "license_id": "mf_schwarzchild",
+        "license_level": 1,
+        "type": "tech",
+        "sp": 2,
+        "tags": [
+            {
+                "id":"tg_unique"
+            }
+        ],
+        "description": "TODO",
+        "actions": [
+            {
+                "name": "Activate Chandrasekhar Limiter",
+                "activation": "Full Tech",
+                "detail": "Create a blast 2 area within sensor range; this area becomes difficult terrain. Additionally, any enemies within this area when it is created must succeed a hull save; those that fail the save are Immobilized until the end of your next turn. Those that succeed are Slowed for the same duration."
+            }
+        ]
+    },
+    {
+        "id": "ms_cconverter",
+        "name": "C-Converter Charges",
+        "sp": 2,
+        "type": "Deployable",
+        "source": "DSD",
+        "license_id":"mf_schwarzchild",
+        "license_level":2,
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 2
+            },
+            {
+                "id": "tg_grenade"
+            }
+        ],
+        "actions": [
+            {
+                "name": "Redshift Grenade",
+                "activation": "Quick",
+                "range": [
+                {
+                    "type": "Range",
+                    "val": 5
+                },
+                {
+                    "type": "Blast",
+                    "val": 2
+                }
+                ],
+                "detail": "Characters struck by the Blast 2 area this grenade creates take 1 Heat for every space they move, until they make no voluntary movements for a full turn on their own turn."
+            }
+        ],
+        "deployables": [
+            {
+                "name": "Blueshift Mine",
+                "type": "Mine",
+                "detail": "Upon stepping on these mines, friendly characters are HASTED, and may perform a Boost as a free action on the turn they stepped on these mines.<br>Hostile characters which step on Blueshift Mines are accelerated 5 spaces directly toward the Schwarzchild which deployed them. If they hit a solid object, or the Schwarzchild itself, they take Kinetic damage equal to the distance they traveled."
+            }
+        ]
+    },
+    {
+        "id": "ms_heat_death_pylons",
+        "name": "Heat Death Pylons",
+        "sp": 2,
+        "type": "Deployable",
+        "source": "DSD",
+        "license_id": "mf_schwarzchild",
+        "license_level": 3,
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 2
+            },
+            {
+                "id":"tg_unique"
+            }
+        ],
+        "deployables": [
+            {
+                "name": "Heat Death Pylon",
+                "type": "Deployable",
+                "instances": 1,
+                "size": 0.5,
+                "hp": 5,
+                "evasion": 10,
+                "edef":10,
+                "detail": "The Heat Death Pylon provides Hard Cover to allies who are at least partially within a Burst 2 area around it. In addition, the Heat Death Pylon absorbs damage dealt by ranged attacks targeting allies within that area, as well as damage from ranged attacks that miss them. Hostile characters treat the area as Dangerous Terrain - Kinetic.<br>When this pylon absorbs 15 or more damage, it explodes, dealing 3d6 AP Energy damage to all characters within the Burst 2 radius."
+            }
+        ]
+    }
+]
