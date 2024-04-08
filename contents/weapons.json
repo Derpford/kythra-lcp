@@ -36,7 +36,7 @@
         "name": "Penrose Accumulator",
         "license_id": "mf_schwarzchild",
         "license_level": 3,
-        "mount": "Heavy",
+        "mount": "Main",
         "type": "Cannon",
         "range": [
             {
@@ -54,7 +54,17 @@
                 "val": "4d6"
             }
         ],
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 3
+            },
+            {
+                "id": "tg_heat_self",
+                "val": 10
+            }
+        ],
         "effect": "Any target in the central hex of this weapon's AoE which has 1 Structure and 7 or less HP at the time of firing is instantly destroyed, leaving no wreck behind. Size 4 and lower cover inside the blast radius is instantly destroyed.",
-        "description": "<span class='horus--subtle'><b><i>\"This place is familiar. It is like a childhood memory, I think. I see this place, and...not this place.<br>I am...starting to lose track. Of which reality is true.<br>My own memory is left wanting. This place... I can tell. I can see all the space around this memory. I know something is missing only by the shape of my memories around it. It is lost... like a fog. I remember... everything. Ragnarok. The only way I would not know of this place... is if that part was taken. I intend to find it again.\"</i></b></span><br><i>-- Godsoldier Deus Rex, to Daemon 'Ragnarok'</i>"
+        "description": "<span class='horus--subtle'><b><i>\"This place is familiar. It is like a childhood memory, I think. I see this place, and...not this place.<br>I am...starting to lose track. Of which reality is true.<br>My own memory is left wanting. This place... I can tell. I can see all the space around this memory.<br>I know something is missing only by the shape of my memories around it. It is lost... like a fog.<br>I remember... everything. Ragnarok. The only way I would not know of this place... is if that part was taken. I intend to find it again.\"</i></b></span><br><i>-- Godsoldier Deus Rex, to Daemon 'Ragnarok'</i>"
     }
 ]
