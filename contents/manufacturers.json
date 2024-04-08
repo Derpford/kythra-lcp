@@ -1,7 +1,9 @@
-{
-    "id": "DSD",
-    "name": "Darksider",
-    "light": "#7D17B3",
-    "dark": "#B369DB",
-    "quote": "[HOSTILE DATAFORM DETECTED]"
-}
+[
+    {
+        "id": "DSD",
+        "name": "Darksider",
+        "light": "#7D17B3",
+        "dark": "#B369DB",
+        "quote": "[HOSTILE DATAFORM DETECTED]"
+    }
+]

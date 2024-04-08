@@ -1,63 +1,69 @@
-{
-    "id": "mf_schwarzchild",
-    "license_level": 2,
-    "source": "DSD",
-    "name": "Schwarzchild",
-    "specialty": false,
-    "mechtype": ["Striker","Defender"],
-    "description": "TODO: Less a frame and more an anomaly, the Schwarzchild is the result of ancient Riftweaving techniques, theories about the precise nature of the Neurostream, and lost Oeldrie technology--all coming together in the form of a melding of pilot and frame that is unlike any other.",
-    "mounts": ["Main","Heavy","Flex"],
-    "stats": {
-        "size": 2,
-        "structure": 4,
-        "stress": 4,
-        "armor": 2,
-        "hp": 8,
-        "evasion": 8,
-        "edef": 6,
-        "heatcap": 8,
-        "repcap": 6,
-        "sensor_range": 10,
-        "tech_attack": 0,
-        "save": 11,
-        "speed": 4,
-        "sp": 8
-    },
-    "traits": [
-        {
-            "name": "E-Orbital Radius",
-            "description": "Once per round, as a reaction: You may attempt to absorb any AoE damage that affects the Schwarzchild, whether it is a Line, Blast, or Cone. Roll 1d6; on a 3 or higher, only the Schwarzchild is affected by the attack, and it takes half damage as the explosion, lasers, or projectiles are sucked into the Schwarzchild's singularity core.",
-            "use": "Turn",
-            "actions": [
-                {
-                    "name": "Gravitational Pull",
-                    "activation": "Reaction",
-                    "frequency": "1/Round",
-                    "trigger": "When affected by an AoE attack",
-                    "detail": "Roll 1d6. On a 3+, an AoE affecting the Schwarzchild only affects the Schwarzchild, and it takes half damage from that attack."
-                }
-            ]
+[
+    {
+        "id": "mf_schwarzchild",
+        "license_level": 2,
+        "source": "DSD",
+        "name": "Schwarzchild",
+        "specialty": false,
+        "mechtype": ["Striker","Defender"],
+        "description": "TODO: Less a frame and more an anomaly, the Schwarzchild is the result of ancient Riftweaving techniques, theories about the precise nature of the Neurostream, and lost Oeldrie technology--all coming together in the form of a melding of pilot and frame that is unlike any other.",
+        "mounts": ["Main","Heavy","Flex"],
+        "stats": {
+            "size": 2,
+            "structure": 4,
+            "stress": 4,
+            "armor": 2,
+            "hp": 8,
+            "evasion": 8,
+            "edef": 6,
+            "heatcap": 8,
+            "repcap": 6,
+            "sensor_range": 10,
+            "tech_attack": 0,
+            "save": 11,
+            "speed": 4,
+            "sp": 8
         },
-        {
-            "name": "Ultramassive",
-            "description": "Energy weapons that strike near the Schwarzchild inevitably fuel its singularity engine. The Schwarzchild has an Ultramassive Die, which starts at 1. Every point of Energy damage done to characters other than the Schwarzchild within the Schwarzchild's sensor range will increment the die by 1. When it reaches 6, the Schwarzchild regenerates 2 HP, and the die is reset to 1. The die can be reset multiple times by the total damage of one attack.",
-            "counters": [
-                {
-                    "id": "ctr_ultramassive",
-                    "name": "Ultramassive Die",
-                    "default_value":1,
-                    "min":1,
-                    "max":6
-                }
-            ]
+        "traits": [
+            {
+                "name": "E-Orbital Radius",
+                "description": "Once per round, as a reaction: You may attempt to absorb any AoE damage that affects the Schwarzchild, whether it is a Line, Blast, or Cone. Roll 1d6; on a 3 or higher, only the Schwarzchild is affected by the attack, and it takes half damage as the explosion, lasers, or projectiles are sucked into the Schwarzchild's singularity core.",
+                "use": "Turn",
+                "actions": [
+                    {
+                        "name": "Gravitational Pull",
+                        "activation": "Reaction",
+                        "frequency": "1/Round",
+                        "trigger": "When affected by an AoE attack",
+                        "detail": "Roll 1d6. On a 3+, an AoE affecting the Schwarzchild only affects the Schwarzchild, and it takes half damage from that attack."
+                    }
+                ]
+            },
+            {
+                "name": "Ultramassive",
+                "description": "Energy weapons that strike near the Schwarzchild inevitably fuel its singularity engine. The Schwarzchild has an Ultramassive Die, which starts at 1. Every point of Energy damage done to characters other than the Schwarzchild within the Schwarzchild's sensor range will increment the die by 1. When it reaches 6, the Schwarzchild regenerates 2 HP, and the die is reset to 1. The die can be reset multiple times by the total damage of one attack.",
+                "counters": [
+                    {
+                        "id": "ctr_ultramassive",
+                        "name": "Ultramassive Die",
+                        "default_value":1,
+                        "min":1,
+                        "max":6
+                    }
+                ]
+            },
+            {
+                "name": "Relativity Engine",
+                "description": "The Schwarzchild can choose to take HP damage as Heat, and Heat as HP damage interchangeably. The Void makes no distinction."
+            }
+        ],
+        "core_system": {
+            "name": "Ergosphere",
+            "active_name": "Core Collapse",
+            "active_effect": "Upon activation, hostile characters within Sensors cannot move away from the Swartzchild by any means, and any movement they make must either keep them the same total distance away, or  bring them closer. In addition, the size and damage of Infinite Density increases, with the Swartzchild doing 9 - it's current Heat in energy damage in a burst 3 radius.",
+            "activation": "Protocol",
+            "passive_name": "Infinite Density",
+            "passive_effect": "The Schwarzchild has a Burst 1 aura around it that deals 6 - current Reactor Stress as Energy Damage to any enemies within that area at the start of the Schwarzchild's turn. The Schwarzchild clears heat equal to 1/4th the damage dealt."
         }
-    ],
-    "core_system": {
-        "name": "Ergosphere",
-        "active_name": "Core Collapse",
-        "active_effect": "Upon activation, hostile characters within Sensors cannot move away from the Swartzchild by any means, and any movement they make must either keep them the same total distance away, or  bring them closer. In addition, the size and damage of Infinite Density increases, with the Swartzchild doing 9 - it's current Heat in energy damage in a burst 3 radius.",
-        "activation": "Protocol",
-        "passive_name": "Infinite Density",
-        "passive_effect": "The Schwarzchild has a Burst 1 aura around it that deals 6 - current Reactor Stress as Energy Damage to any enemies within that area at the start of the Schwarzchild's turn. The Schwarzchild clears heat equal to 1/4th the damage dealt."
     }
-}
+]
